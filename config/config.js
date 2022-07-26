@@ -80,7 +80,7 @@ var bitcoindConf = {
   disableAgent: true
 };
 
-var enableRatelimiter = process.env.ENABLE_RATELIMITER === 'true';
+var enableRatelimiter = process.env.ENABLE_RATELIMITER === 'false';
 var enableEmailstore = process.env.ENABLE_EMAILSTORE === 'false';
 var loggerLevel = process.env.LOGGER_LEVEL || 'info';
 var enableHTTPS = process.env.ENABLE_HTTPS === 'true';
