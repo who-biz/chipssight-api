@@ -145,6 +145,7 @@ Address.prototype._addTxItem = function(txItem, txList, includeInfo) {
       this.txApperances += addSpend;
     }
   } else {
+    console.log("Unconfirmed txid = " + txItem.txid);
     this.unconfirmedBalanceSat += v;
     this.unconfirmedTxApperances += add;
   }
